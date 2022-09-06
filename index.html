@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastre um ponto turístico</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="main-container">
+    <section class="form-section">
+      <div class="title-container">
+        <h1 class="title">Cadastre um ponto turístico</h1>
+        <p class="text">Compartilhe um lugar interessante!</p>
+      </div>
+
+      <form class="form">
+        <div class="input-group">
+          <label for="place-name" class="inner-label">Nome do lugar</label>
+          <input type="text" id="place-name" class="text-input" placeholder="Cristo Redentor">
+        </div>
+
+        <div class="input-group">
+          <label for="city" class="inner-label">Cidade</label>
+          <input type="text" id="city" class="text-input" placeholder="Rio de Janeiro">
+        </div>
+
+        <div class="select-group">
+          <label for="country" class="inner-label">País</label>
+          <select id="country" class="select">
+            <option value="" disabled selected>Selecione o país</option>
+            <optgroup label="África">
+              <option value="">África do Sul</option>
+              <option value="">Egito</option>
+              <option value="">Moçambique</option>
+            </optgroup>
+            <optgroup label="América do Sul">
+              <option value="">Brasil</option>
+              <option value="">Chile</option>
+              <option value="">Peru</option>
+            </optgroup>
+            <optgroup label="América do Norte">
+              <option value="">Estados Unidos</option>
+              <option value="">México</option>
+              <option value="">Canadá</option>
+            </optgroup>
+            <optgroup label="América Central">
+              <option value="">Bahamas</option>
+              <option value="">Cuba</option>
+              <option value="">Jamaica</option>
+            </optgroup>
+            <optgroup label="Ásia">
+              <option value="">China</option>
+              <option value="">Japão</option>
+              <option value="">Tailândia</option>
+            </optgroup>
+            <optgroup label="Europa">
+              <option value="">Itália</option>
+              <option value="">França</option>
+              <option value="">Holanda</option>
+            </optgroup>
+            <optgroup label="Oceania">
+              <option value="">Austrália</option>
+              <option value="">Indonésia</option>
+              <option value="">Nova Zelândia</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="textarea-group">
+          <label for="description" class="inner-label">Descricão</label>
+          <textarea name="" id="description" class="textarea"></textarea>
+        </div>
+
+        <fieldset class="checkbox-group">
+          <legend>Informações adicionais</legend>
+          <label class="checkbox-label">
+            <input type="checkbox">
+            Pet-friendly
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox">
+            Ingresso
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox">
+            Serviço de guia turístico
+          </label>
+        </fieldset>
+
+        <fieldset class="radio-group">
+          <legend>Melhor horário para visitação</legend>
+          <label class="radio-label">
+            <input type="radio" name="time">
+            Manhã
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="time">
+            Tarde
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="time">
+            Noite
+          </label>
+        </fieldset>
+
+        <div class="file-group">
+          <label for="image" class="file-label">Imagem</label>
+          <input type="file" class="file-input">
+        </div>
+
+        <button type="submit" class="button">Enviar</button>
+      </form>
+    </section>
+
+    <section class="images-section">
+      <div class="image-container">
+        <img src="./images/image-1.jpg" alt="Torre Eiffel">
+      </div>
+      <div class="image-container">
+        <img src="./images/image-2.jpg" alt="Pão de Açucar">
+      </div>
+      <div class="image-container">
+        <img src="./images/image-3.jpg" alt="Taj Mahal">
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
