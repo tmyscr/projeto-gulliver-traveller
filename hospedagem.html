@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style-hospedagem.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Hospedagem</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href=""><span>Traveller</span></a>
+      </div>
+      <ul class="navbar-list">
+        <li class="list-item">
+          <a href="#">
+            <span class="material-symbols-outlined" id="icon-item">location_on</span>
+            <span class="text-item">Como chegar</span>
+          </a>
+        </li>
+        <li class="list-item">
+          <a href="#">
+            <span class="material-symbols-outlined" id="icon-item">bed</span>
+            <span class="text-item">Hospedagem</span>
+          </a>
+        </li>
+        <li class="list-item">
+          <a href="#">
+            <span class="material-symbols-outlined" id="icon-item">directions_car</span>
+            <span class="text-item">Alugar veículo</span>
+          </a>
+        </li>
+        <li class="list-item">
+          <a href="#">
+            <span class="material-symbols-outlined" id="icon-item">attractions</span>
+            <span class="text-item">O que fazer</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-banner">
+      <div class="img-container">
+        <img src="./img/beach-image.jpg" alt="Vista de cima de uma praia">
+      </div>
+      <h1>Planeje sua viagem e descubra lugares incríveis</h1>
+      <div class="form-container">
+        <form>
+          <div class="radio-container">
+            <legend>Qual o seu tipo de viagem?</legend>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="travel-type">
+                Férias
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="travel-type">
+                Trabalho
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="travel-type">
+                Turismo
+              </label>
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="input-group">
+              <label for="destination" class="inner-label">Destino ou hotel</label>
+              <input type="text" id="destination" class="text-input" placeholder="Digite seu destino ou hotel aqui...">
+            </div>
+            <div class="input-group">
+              <label for="checkin" class="inner-label">Entrada</label>
+              <input type="date" id="checkin" class="text-input">
+            </div>
+            <div class="input-group">
+              <label for="checkout" class="inner-label">Saída</label>
+              <input type="date" id="checkout" class="text-input">
+            </div>
+            <button type="submit" class="button">Buscar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="hotels">
+      <h2>Hotéis sugeridos</h2>
+      <div class="container-hotels">
+        <a href="#">
+          <article class="hotel-card">
+            <img src="./img/ibis-anhembi.jpg" alt="Fachada do hotel IBIS">
+            <h3>IBIS Styles São Paulo Anhembi</h3>
+            <p>São Paulo, SP - Brasil</p>
+            <div class="rate">
+              <span class="material-symbols-outlined full-star golden-star">star_rate</span>
+              <span class="material-symbols-outlined full-star golden-star">star_rate</span>
+              <span class="material-symbols-outlined golden-star">star_rate_half</span>
+              <span class="material-symbols-outlined star-rate">star_rate</span>
+              <span class="material-symbols-outlined star-rate">star_rate</span>
+            </div>
+          </article>
+        </a>
+
+        <a href="#">
+          <article class="hotel-card">
+            <img src="./img/comfort-ibirapuera.jpg" alt="Fachada do hotel Comfort Ibirapuera">
+            <h3>Comfort Ibirapuera</h3>
+            <p>São Paulo, SP - Brasil</p>
+            <div class="rate">
+              <span class="material-symbols-outlined full-star golden-star">star_rate</span>
+              <span class="material-symbols-outlined full-star golden-star">star_rate</span>
+              <span class="material-symbols-outlined full-star golden-star">star_rate</span>
+              <span class="material-symbols-outlined full-star golden-star">star_rate</span>
+              <span class="material-symbols-outlined star-rate">star_rate</span>
+            </div>
+          </article>
+        </a>
+
+        <a href="#">
+          <article class="hotel-card">
+            <img src="./img/blue-tree-morumbi.jpg" alt="Fachada do hotel Blue Tree Premium Morumbi">
+            <h3>Blue Tree Premium Morumbi</h3>
+            <p>São Paulo, SP - Brasil</p>
+            <div class="rate">
+              <span class="material-symbols-outlined full-star golden-star">star_rate</span>
+              <span class="material-symbols-outlined full-star golden-star">star_rate</span>
+              <span class="material-symbols-outlined full-star golden-star">star_rate</span>
+              <span class="material-symbols-outlined full-star golden-star">star_rate</span>
+              <span class="material-symbols-outlined golden-star">star_rate_half</span>
+            </div>
+          </article>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

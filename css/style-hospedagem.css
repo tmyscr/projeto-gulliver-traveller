@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Space+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Inter Tight', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #3f4044;
+}
+
+.navbar {
+  padding: 1.2rem 3rem;
+  background-color: #f7f8f9;
+  display: flex;
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  color: #234564;
+  font-weight: 700;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 2;
+}
+
+.list-item {
+  list-style: none;
+}
+
+.list-item a {
+  display: flex;
+  align-items: center;
+}
+
+.list-item a:hover {
+  color: #0c5396;
+}
+
+#icon-item {
+  margin-right: 8px;
+}
+
+.text-item {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+}
+
+.hero-banner {
+  height: 560px;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.hero-banner h1 {
+  position: absolute;
+  color: #f7f7f7;
+  width: 580px;
+  font-size: 48px;
+  left: 10%;
+  top: 20%;
+}
+
+.img-container {
+  height: 100%;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.hero-banner img {
+  max-width: 100%;
+  width: 100vw;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.form-container {
+  position: absolute;
+  background-color: #fafafa;
+  width: 60%;
+  top: 50%;
+  left: 10%;
+  border-radius: 10px;
+}
+
+form {
+  height: 100%;
+}
+
+.radio-container {
+  background-color: #234564;
+  padding: 0.8rem 1rem;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+}
+
+.radio-container legend {
+  font-weight: 600;
+  color: #f7f7f7;
+}
+
+.radio-container label {
+  color: #f7f7f7;
+}
+
+.radio-container input {
+  margin-left: 2.5rem;
+  margin-right: 0.5rem;
+  transform: scale(1.4);
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem 1rem 1rem;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.inner-label {
+  margin-bottom: 10px;
+  padding: 0 5px;
+  position: absolute;
+  top: -8px;
+  left: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.text-input {
+  padding: 15px 10px 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  display: block;
+  width: 100%;
+}
+
+.button {
+  padding: 0.8rem;
+  width: 60%;
+  border-radius: 5px;
+  background-color: #234564;
+  color: #f7f7f7;
+  font-weight: 700;
+  font-size: 1em;
+  align-self: flex-end;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0c5396;
+}
+
+.hotels {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hotels h2 {
+  color: #234564;
+}
+
+.hotels h2::after {
+  content: '';
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #cecece;
+  margin: 10px 0;
+}
+
+.container-hotels {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.hotel-card {
+  width: 90%;
+  height: 100%;
+  padding: 0.8rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-card img {
+  margin-bottom: 8px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.hotel-card img:hover {
+  opacity: 0.9;
+}
+
+.hotel-card p {
+  margin: 5px 0;
+}
+
+.full-star {
+  font-variation-settings: 'FILL' 1;
+}
+
+.golden-star {
+  color: #daa520;
+}
+
+.star-rate {
+  color: #ccc;
+}
+
+@media (max-width: 576px) {
+  .navbar-list {
+    justify-content: space-evenly;
+  }
+
+  .radio-container {
+    flex-direction: column;
+  }
+
+  .radio-container legend {
+    margin-bottom: 15px;
+  }
+
+  .radio-container input {
+    margin: 0;
+    transform: scale(1.2);
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0 0.8rem;
+  }
+
+  .logo {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .list-item {
+    margin-bottom: 20px;
+  }
+
+  #icon-item {
+    display: none;
+  }
+
+  .hero-banner h1 {
+    width: 350px;
+    font-size: 28px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .hero-banner img {
+    opacity: 0.5;
+    object-position: left;
+  }
+
+  .form-container {
+    width: 80%;
+    top: 30%;
+    left: 10%;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  .input-group {
+    margin: 10px 0;
+  }
+
+  .button {
+    align-self: flex-start;
+  }
+
+  .container-hotels {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hotel-card {
+    margin: 20px 0;
+    width: 90%;
+  }
+}
