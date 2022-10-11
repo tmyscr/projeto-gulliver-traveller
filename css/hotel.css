@@ -1,0 +1,160 @@
+.hotel-details {
+  width: 90vw;
+  margin: 0 auto;
+  margin: 60px auto;
+}
+
+.hotel-details img {
+  max-width: 100%;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.hotel-details h1 {
+  font-size: 2.2rem;
+  margin: 10px 0;
+  color: #234564;
+}
+
+.hotel-container {
+  display: grid;
+  grid-template-columns: minmax(450px, 1fr) 2fr 1fr;
+  gap: 30px;
+}
+
+.hotel-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.adress,
+.city {
+  margin: 5px 0;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+}
+
+.rating {
+  margin: 10px 0;
+}
+
+.rating-container a {
+  margin-left: 10px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #0c5396;
+}
+
+.rating-container a:hover,
+.rating-container a:focus {
+  color: #378ad2;
+}
+
+.description {
+  max-width: 80%;
+}
+
+.location {
+  height: 50%;
+}
+
+.location h3,
+.description h3 {
+  color: #3f4044;
+  margin-bottom: 5px;
+}
+
+.location iframe {
+  max-width: 100%;
+  height: 80%;
+  margin: 10px 0;
+}
+
+.price-container {
+  margin: 40px auto;
+}
+
+.price-container h2 {
+  font-size: 1.8rem;
+  margin: 20px 0 8px 0;
+  color: #3f4044;
+}
+
+.tax {
+  margin-bottom: 8px;
+}
+
+.links {
+  margin: 40px 0;
+}
+
+.links a {
+  display: block;
+  background-color: #234564;
+  color: #f7f7f7;
+  margin: 20px 0;
+  padding: 15px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.links a:hover,
+.links a:focus {
+  background-color: #0c5396;
+}
+
+@media (max-width: 992px) {
+  .navbar-list {
+    justify-content: space-evenly;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 0 0.8rem;
+  }
+
+  .logo {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .list-item {
+    margin-bottom: 20px;
+  }
+
+  #icon-item {
+    display: none;
+  }
+
+  .hotel-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .hotel-info {
+    height: 650px;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .location iframe {
+    width: 100%;
+  }
+
+  .price-container {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .price {
+    text-align: center;
+  }
+}
