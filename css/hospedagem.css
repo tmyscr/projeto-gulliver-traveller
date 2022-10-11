@@ -1,73 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Space+Mono&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-size: 16px;
-  font-family: 'Inter Tight', sans-serif;
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: #3f4044;
-}
-
-.navbar {
-  padding: 1.2rem 3rem;
-  background-color: #f7f8f9;
-  display: flex;
-}
-
-.logo {
-  flex: 1;
-}
-
-.logo span {
-  font-size: 1.5rem;
-  color: #234564;
-  font-weight: 700;
-}
-
-.navbar-list {
-  display: flex;
-  justify-content: space-evenly;
-  flex: 2;
-}
-
-.list-item {
-  list-style: none;
-}
-
-.list-item a {
-  display: flex;
-  align-items: center;
-}
-
-.list-item a:hover {
-  color: #0c5396;
-}
-
-#icon-item {
-  margin-right: 8px;
-}
-
-.text-item {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 600;
-}
-
 .hero-banner {
   height: 560px;
   position: relative;
   margin-bottom: 60px;
+  background: url(../images/beach-image.jpg) no-repeat center / cover;
+}
+
+.hero-banner::after {
+  content: '';
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
 }
 
 .hero-banner h1 {
@@ -114,16 +57,16 @@ form {
   display: flex;
 }
 
-.radio-container legend {
+.radio-container p {
   font-weight: 600;
   color: #f7f7f7;
 }
 
-.radio-container label {
+.radio-group label {
   color: #f7f7f7;
 }
 
-.radio-container input {
+.radio-group input {
   margin-left: 2.5rem;
   margin-right: 0.5rem;
   transform: scale(1.4);
@@ -172,7 +115,8 @@ form {
   cursor: pointer;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #0c5396;
 }
 
@@ -193,10 +137,11 @@ form {
   margin: 10px 0;
 }
 
-.container-hotels {
+.list-hotels {
   display: flex;
   justify-content: space-between;
   margin: 40px 0;
+  list-style: none;
 }
 
 .hotel-card {
@@ -204,6 +149,7 @@ form {
   height: 100%;
   padding: 0.8rem;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
 }
 
 .hotel-card img {
@@ -219,18 +165,6 @@ form {
 
 .hotel-card p {
   margin: 5px 0;
-}
-
-.full-star {
-  font-variation-settings: 'FILL' 1;
-}
-
-.golden-star {
-  color: #daa520;
-}
-
-.star-rate {
-  color: #ccc;
 }
 
 @media (max-width: 576px) {
@@ -306,7 +240,7 @@ form {
     align-self: flex-start;
   }
 
-  .container-hotels {
+  .list-hotels {
     flex-direction: column;
     align-items: center;
   }
