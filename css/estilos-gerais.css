@@ -9,6 +9,7 @@
 body {
   font-size: 16px;
   font-family: 'Inter Tight', sans-serif;
+  background-color: var(--white-2);
 }
 
 img {
@@ -17,7 +18,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #3f4044;
+  color: var(--dark-gray);
 }
 
 ul {
@@ -34,52 +35,51 @@ ul {
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 24px;
-  color: #f7f7f7;
+  color: var(--white-1);
   text-align: center;
   outline: none;
   z-index: 1;
 }
 
-.navbar {
-  padding: 1.2rem 3rem;
-  background-color: #f7f8f9;
-  display: flex;
-}
-
-.logo {
-  flex: 1;
-}
-
-.logo span {
-  font-size: 1.5rem;
-  color: #234564;
-  font-weight: 700;
-}
-
-.navbar-list {
-  display: flex;
-  justify-content: space-evenly;
-  flex: 2;
-}
-
-.list-item {
-  list-style: none;
-}
-
-.list-item a {
+.nav-link {
   display: flex;
   align-items: center;
 }
 
-.list-item a:hover {
-  color: #0c5396;
+.navbar {
+  background-color: var(--white-1);
 }
 
-.list-item a:focus {
-  color: #0c5396;
-  height: 100%;
-  padding: 0 5px;
-  border-radius: 5px;
+.nav-item span {
+  font-weight: 500;
+  color: var(--gray-1);
+}
+
+.nav-link {
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+
+.nav-link:hover {
+  border: 1px solid var(--green-1);
+  border-radius: 20px;
+}
+
+.nav-link:hover span {
+  color: var(--green-1);
+}
+
+.form-select {
+  border-color: transparent;
+  background-color: var(--white-1);
+  color: var(--gray-2);
+  outline-style: none;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  font-weight: 700;
 }
 
 #icon-item {
@@ -101,4 +101,52 @@ ul {
 
 .star-rate {
   color: #ccc;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+.input-group-1 {
+  position: relative;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.inner-label {
+  margin-bottom: 10px;
+  padding: 0 5px;
+  position: absolute;
+  top: -8px;
+  left: 15px;
+  background-color: #FFF;
+  border-radius: 5px;
+}
+
+.text-input {
+  padding: 15px 10px 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  display: block;
+  width: 100%;
+}
+
+.custom-button {
+  padding: 0.8rem;
+  width: 50%;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  color: var(--white-2);
+  font-weight: 700;
+  font-size: 1em;
+  align-self: flex-end;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-button:hover,
+.custom-button:focus {
+  background-color: var(--blue-2);
 }

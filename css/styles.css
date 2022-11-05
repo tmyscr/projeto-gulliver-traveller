@@ -1,3 +1,19 @@
+@import './estilos-gerais.css';
 @import './hospedagem.css';
 @import './hotel.css';
-@import './estilos-gerais.css';
+@import './como-chegar.css';
+@import './formulario-ponto-turistico.css';
+
+:root {
+  --main-color: #234664;
+  --dark-blue: #222270;
+  --blue-1: #253C7A;
+  --blue-2: #335D84;
+  --green-1: #25697A;
+  --green-2: #22706B;
+  --dark-gray: #3F4044;
+  --gray-1: #5D5F66;
+  --gray-2: #91939C;
+  --white-1: #F7F8F9;
+  --white-2: #FAFAFA;
+}

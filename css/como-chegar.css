@@ -1,0 +1,142 @@
+.main {
+  background-color: #FFF;
+  padding: 60px 0 20px 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.main .title {
+  font-size: 48px;
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+}
+
+.main p {
+  font-size: 18px;
+}
+
+.input-group-1:nth-child(3), .input-group-1:nth-child(4) {
+  width: 60%;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.checkbox-container {
+  cursor: pointer;
+  display: flex;
+}
+
+.custom-checkbox {
+  background-color: #FFF;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  padding: .25rem 2rem;
+  color: var(--blue-2);
+  user-select: none;
+}
+
+input[type="checkbox"]:checked ~ .custom-checkbox {
+  background-color: var(--blue-2);
+  color: #FFF;
+}
+
+.buttons-container {
+  margin: 15px 0;
+  align-items: center;
+}
+
+.buttons-container p {
+  margin: 0;
+}
+
+.routes-box {
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 0;
+  margin: 25px auto;
+}
+
+.routes-box h2 {
+  color: var(--blue-1);
+  margin-bottom: 25px;
+}
+
+.routes-box p {
+  margin-bottom: 10px;
+}
+
+.routes-box article {
+  padding: 40px;
+  flex: 1;
+}
+
+.flights-info::after, .flight::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #25697A20;
+  margin: 30px 0;
+}
+
+.routes-box iframe {
+  flex: 1;
+  border-radius: 0 10px 10px 0;
+}
+
+.flight h3 {
+  font-size: 18px;
+  color: var(--green-1);
+  font-weight: 600;
+}
+
+.bold-gray {
+  font-weight: 600;
+  color: var(--gray-1);
+}
+
+.bold-green {
+  font-weight: 600;
+  color: var(--green-1);
+}
+
+
+@media (max-width: 992px) {
+  .input-group-1 {
+    margin-bottom: 25px;
+  }
+
+  .input-group-1:nth-child(3), .input-group-1:nth-child(4) {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .routes-box {
+    flex-direction: column;
+  }
+
+  .routes-box iframe {
+    flex: none;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .buttons-container {
+    margin: 15px 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .buttons-container p {
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    align-self: center;
+  }
+}
+

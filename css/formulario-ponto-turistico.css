@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-:root {
-  --blue-label: #084a8b;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +28,7 @@ body {
 }
 
 .title {
-  color: #2683b2;
+  color: var(--blue-2);
   font-size: 48px;
 }
 
@@ -71,7 +67,7 @@ body {
   left: 10px;
   background-color: #fff;
   border-radius: 5px;
-  color: var(--blue-label);
+  color: var(--dark-gray);
 }
 
 .textarea {
@@ -154,22 +150,9 @@ fieldset,
   object-position: center;
 }
 
-.button {
+.form-button {
   align-self: flex-start;
-  padding: 10px 20px;
-  font-size: inherit;
-  text-transform: uppercase;
-  border: none;
-  background-color: #0fa9ff;
-  color: #fff;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
   margin-top: 20px;
-}
-
-.button:hover {
-  background-color: #3abbfb;
 }
 
 @media (max-width: 768px) {
