@@ -98,6 +98,11 @@
   justify-content: space-between;
   margin: 40px 0;
   list-style: none;
+  padding-left: 0;
+}
+
+.stays-list-hotels li {
+  width: 100%;
 }
 
 .stays-list-hotels a:hover {
@@ -192,6 +197,20 @@
     left: 10%;
   }
 
+  
+  .stays-radio-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #stays-question-type {
+    margin-bottom: .5rem;
+  }
+
+  .stays-radio-label {
+    margin: 0 .5rem;
+  }
+
   .input-container {
     flex-direction: column;
   }
@@ -219,4 +238,5 @@
   .stays-form-container {
     width: 70%;
   }
+
 }
